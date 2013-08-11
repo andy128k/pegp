@@ -1,0 +1,18 @@
+{
+  "name": "andy128k/pegp",
+  "description": "PEG",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrey Kutejko",
+      "email": "andy128k@gmail.com"
+    }
+  ],
+  "autoload": {
+    "classmap" : ["lib"]
+  },
+  "require-dev": {
+    "phpunit/phpunit": "3.7.*"
+  }
+}
+
