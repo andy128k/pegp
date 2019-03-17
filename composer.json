@@ -1,6 +1,6 @@
 {
   "name": "andy128k/pegp",
-  "description": "PEG",
+  "description": "Library to construct PEG parsers",
   "license": "MIT",
   "authors": [
     {
@@ -8,16 +8,24 @@
       "email": "andy128k@gmail.com"
     }
   ],
+  "scripts": {
+    "test": "phpunit test",
+    "coverage": "phpunit test --coverage-html coverage --whitelist src"
+  },
   "autoload": {
-    "classmap" : ["src/"]
+    "psr-4": {
+      "Pegp\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "": "test/"
+    }
+  },
+  "require": {
+    "php": ">=5.6"
   },
   "require-dev": {
-    "phpunit/phpunit": "4.4.*"
-  },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "0.x-dev"
-    }
+    "phpunit/phpunit": "~8"
   }
 }
-
